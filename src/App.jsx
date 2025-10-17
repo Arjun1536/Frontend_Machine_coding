@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 // import StarRating from './components/Star_print/StartRating'
 import Fetch_Api from './components/Pagenation/Fetch_Api'
+import Search from './components/Search_bar/Search'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
       {/* <StarRating /> */}
-      <Fetch_Api />
+      {/* <Fetch_Api /> */}
+      <Search />
     </>
   )
 }
