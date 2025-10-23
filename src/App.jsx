@@ -5,6 +5,7 @@ import './App.css'
 // import StarRating from './components/Star_print/StartRating'
 import Fetch_Api from './components/Pagenation/Fetch_Api'
 import Search from './components/Search_bar/Search'
+import SearchbyAPI from './components/Search_bar/SearchbyAPI'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       {/* <StarRating /> */}
       {/* <Fetch_Api /> */}
-      <Search />
+      {/* <Search /> */}
+      <SearchbyAPI/>
     </>
   )
 }

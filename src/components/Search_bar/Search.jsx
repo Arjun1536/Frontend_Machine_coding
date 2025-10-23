@@ -20,13 +20,20 @@ const Search = ()=>{
         
     }
     useEffect(()=>{
-        if(input.trim()!==""){
-        handleSearch()
-        setisSearch(true)
-        }
-        else{
-            setisSearch(false)
-        }
+        //^ useDebouncer here
+        const timer = setTimeout(()=>{
+            if(input.trim()!==""){
+                handleSearch()
+                setisSearch(true)
+            }else{
+                setisSearch(false)
+            }
+
+        },3000)
+        //* cleanup timer also
+        return(()=>clearTimeout(timer))
+
+       
         
     },[input])
     return <div>
