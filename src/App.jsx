@@ -6,6 +6,7 @@ import './App.css'
 import Fetch_Api from './components/Pagenation/Fetch_Api'
 import Search from './components/Search_bar/Search'
 import SearchbyAPI from './components/Search_bar/SearchbyAPI'
+import Grid_layout from './components/Grid_layout/Grid_layout'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,7 +16,8 @@ function App() {
       {/* <StarRating /> */}
       {/* <Fetch_Api /> */}
       {/* <Search /> */}
-      <SearchbyAPI/>
+      {/* <SearchbyAPI/> */}
+      <Grid_layout/>
     </>
   )
 }
