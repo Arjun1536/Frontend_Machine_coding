@@ -5,7 +5,7 @@ const Pagenation = ({pageNo,setPageNo})=>{
 
     const prevThree = Array.from({length :3},(_, index)=>pageNo -1 -index).filter((val)=>val>0).reverse()
     console.log(prevThree)
-
+    const prevState = Array.from({length:2},)
     const nextThree = Array.from({length:3},(_,index)=> pageNo+index)
     console.log(nextThree)
     console.log([...prevThree,...nextThree])

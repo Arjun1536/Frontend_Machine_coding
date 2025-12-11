@@ -13,6 +13,7 @@ import { Routes,Route } from 'react-router-dom'
 import Contact from './components/Lazy_Loading_RR/Contact'
 import Home from './components/Lazy_Loading_RR/Home'
 import Navbar from './components/Lazy_Loading_RR/Navbar'
+import InfiniteLoading from './components/Infinite_Loading/InfiniteLoading'
 
  const About = lazy(()=>import ('./components/Lazy_Loading_RR/About' ))  // using lazy loading
 function App() {
@@ -26,13 +27,14 @@ function App() {
       {/* <SearchbyAPI/> */}
       {/* <Grid_layout/> */}
       {/* <OtpCheck /> */}
-      <Counter />
+      {/* <Counter />
       <Navbar/>
       <Routes>
         <Route path='/' element={<Home />}/>
         <Route path='/about' element = {<About />}/>
         <Route path='/contact' element={<Contact />}/>
-      </Routes>
+      </Routes> */}
+      <InfiniteLoading />
     </>
   )
 }
