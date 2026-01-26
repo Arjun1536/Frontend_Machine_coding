@@ -14,6 +14,7 @@ import Contact from './components/Lazy_Loading_RR/Contact'
 import Home from './components/Lazy_Loading_RR/Home'
 import Navbar from './components/Lazy_Loading_RR/Navbar'
 import InfiniteLoading from './components/Infinite_Loading/InfiniteLoading'
+import StopWatch from './components/StopWatch/StopWatch'
 
  const About = lazy(()=>import ('./components/Lazy_Loading_RR/About' ))  // using lazy loading
 function App() {
@@ -34,7 +35,8 @@ function App() {
         <Route path='/about' element = {<About />}/>
         <Route path='/contact' element={<Contact />}/>
       </Routes> */}
-      <InfiniteLoading />
+      {/* <InfiniteLoading /> */}
+      <StopWatch />
     </>
   )
 }
