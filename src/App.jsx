@@ -15,6 +15,7 @@ import Home from './components/Lazy_Loading_RR/Home'
 import Navbar from './components/Lazy_Loading_RR/Navbar'
 import InfiniteLoading from './components/Infinite_Loading/InfiniteLoading'
 import StopWatch from './components/StopWatch/StopWatch'
+import Virtual_list from './components/Virtualization/Virtual_list'
 
  const About = lazy(()=>import ('./components/Lazy_Loading_RR/About' ))  // using lazy loading
 function App() {
@@ -36,7 +37,8 @@ function App() {
         <Route path='/contact' element={<Contact />}/>
       </Routes> */}
       {/* <InfiniteLoading /> */}
-      <StopWatch />
+      {/* <StopWatch /> */}
+      < Virtual_list />
     </>
   )
 }
